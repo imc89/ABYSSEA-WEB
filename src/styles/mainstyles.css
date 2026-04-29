@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    cursor: url('https://raw.githubusercontent.com/imc89/ABYSSE/main/img/cursor/mainCursor_1.png') 32 32, auto;
+    cursor: url('../../img/cursor/cursor.cur'), auto !important;
     height: auto;
     /* EVITAR COPIAR O ARRASTRAR IMAGENES */
     /* -webkit-user-select: none;
@@ -15,7 +15,7 @@
 }
 
 .change-cursor:hover {
-    cursor: url('https://raw.githubusercontent.com/imc89/ABYSSE/main/img/cursor/mainCursor_2.png') 32 32, auto;
+    cursor: url('../../img/cursor/cursor_hover.cur'), auto !important;
 }
 
 .center {
@@ -67,7 +67,7 @@
 }
 
 .glow-title {
-    text-align:center;
+    text-align: center;
     font-family: 'Cabin', helvetica, arial, sans-serif;
     font-size: 13px;
     height: 40px;
@@ -138,13 +138,14 @@
     animation: glow 800ms ease-out infinite alternate;
 }
 
-.arrow-button-right:hover .arrow{
-   border-color: rgb(85, 235, 255);
+.arrow-button-right:hover .arrow {
+    border-color: rgb(85, 235, 255);
 }
-.arrow-button-left:hover .arrow{
+
+.arrow-button-left:hover .arrow {
     border-color: rgb(85, 235, 255);
     ;
- }
+}
 
 .container-arrow-buttons button:disabled {
     opacity: 0.5;
@@ -154,11 +155,11 @@
     transition: none;
     -webkit-animation: none;
     animation: none;
-  }
-  
-  .container-arrow-buttons button:disabled p,
-  .container-arrow-buttons button:disabled i,
-  .container-arrow-buttons button:disabled  {
+}
+
+.container-arrow-buttons button:disabled p,
+.container-arrow-buttons button:disabled i,
+.container-arrow-buttons button:disabled {
     color: #ccc;
     cursor: not-allowed;
     pointer-events: none;
@@ -167,11 +168,13 @@
     transition: none;
     -webkit-animation: none;
     animation: none;
-  }
-  .container-arrow-buttons button:disabled .arrow-button-left .arrow {
+}
+
+.container-arrow-buttons button:disabled .arrow-button-left .arrow {
     border-color: black;
-  }
-  /* button:disabled .container-arrow-buttons button.disabled p,
+}
+
+/* button:disabled .container-arrow-buttons button.disabled p,
   .container-arrow-buttons button.disabled i{
     opacity: 0.5;
     cursor: not-allowed;

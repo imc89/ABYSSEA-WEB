@@ -10,7 +10,7 @@ var filterSearch = 'name';
 
 function init() {
 
-  fetch(`https://raw.githubusercontent.com/imc89/ABYSSE/main/src/data/data.json`)
+  fetch(`https://raw.githubusercontent.com/imc89/ABYSSEA-WEB/refs/heads/main/src/data/data.json`)
     .then((response) => response.json())
     .then((data) => (species = data));
 
@@ -97,7 +97,7 @@ function autocomplete(event, filterSearch) {
     for (let fish of species) {
       if (value.length >= 3) {
         // if (fish.latin.startsWith(value.toLowerCase())) {
-          if (fish.latin.includes(value.toLowerCase())) {
+        if (fish.latin.includes(value.toLowerCase())) {
           filteredResults.push(fish.latin)
         }
       }

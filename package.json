@@ -4,12 +4,10 @@
   "description": "Redesign and translation into spanish of the Japanese website created in 2004 (http://www7a.biglobe.ne.jp)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "predeploy": "echo 'No build step needed for static site'",
+    "deploy": "gh-pages -d ."
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "mongodb": "^6.3.0"
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }

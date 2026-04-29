@@ -41,7 +41,7 @@ async function setLocale(newLocale) {
 // Recuperar traducciones del objeto JSON para la configuración regional escogida.
 // Retrieve translations of the JSON object for the chosen locale.
 async function fetchTranslationsFor(newLocale) {
-    const response = await fetch(`https://raw.githubusercontent.com/imc89/ABYSSE/main/src/locales/${newLocale}.json`);
+    const response = await fetch(`https://raw.githubusercontent.com/imc89/ABYSSEA-WEB/refs/heads/main/src/locales/${newLocale}.json`);
     return await response.json();
 }
 

@@ -1,6 +1,7 @@
 .translator-container {
 	height: 62px;
 	margin-top: 5px;
+	margin-right: 5px;
 	background: #111;
 	background: linear-gradient(#1b1b1b, #111);
 	border: 1px solid #000;

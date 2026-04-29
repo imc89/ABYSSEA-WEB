@@ -35,6 +35,6 @@ async function searcher() {
 }
 
 async function fetchSpeciesFor() {
-    const response = await fetch(`https://raw.githubusercontent.com/imc89/ABYSSE/main/src/data/data.json`);
+    const response = await fetch(`https://raw.githubusercontent.com/imc89/ABYSSEA-WEB/refs/heads/main/src/data/data.json`);
     return await response.json();
 }
