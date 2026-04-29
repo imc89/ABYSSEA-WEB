@@ -1,0 +1,66 @@
+ul {
+  z-index: 0;
+  position: absolute;
+  right: 0.02em;
+  top: 100%;
+  margin-top: -1px;
+  width: 100%;
+  margin: 0;
+  list-style: none;
+  transition: none;
+  padding: 0;
+  text-align: center;
+  -webkit-animation: glow 800ms ease-out infinite alternate;
+  animation: glow 800ms ease-out infinite alternate;
+  background: #222922;
+  background: linear-gradient(#333933, #222922);
+  border: 1px solid rgb(51, 66, 153);
+  box-shadow: 0 0 5px rgba(0, 13, 255, 0.2), inset 0 0 5px rgba(0, 26, 255, 0.1), 0 2px 0 #000;
+  color: #efe;
+  outline: none;
+}
+
+ul li {
+  padding: 16px 22px;
+}
+
+ul li.selected {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+ul li:hover {
+  color: lightslategrey;
+  cursor: url('https://raw.githubusercontent.com/imc89/ABYSSEA-WEB/refs/heads/main/img/cursor/mainCursor_2.png') 32 32, auto;
+}
+
+ul li+li {
+  -webkit-animation: top_glow 800ms ease-out infinite alternate;
+  animation: top_glow 800ms ease-out infinite alternate;
+  border-top: 1px solid rgb(51, 66, 153);
+  color: #efe;
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@-webkit-keyframes top_glow {
+  0% {
+    border-top-color: rgb(51, 105, 153);
+  }
+
+  100% {
+    border-color: rgb(102, 255, 252);
+  }
+}
+
+@keyframes top_glow {
+  0% {
+    border-top-color: rgb(51, 105, 153);
+  }
+
+  100% {
+    border-color: rgb(102, 242, 255);
+  }
+}

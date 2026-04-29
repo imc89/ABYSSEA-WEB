@@ -1,0 +1,148 @@
+.toggle {
+    height: 40px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+#toggle {
+    position: absolute;
+    width: 110px;
+}
+
+.toggle-labels {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-label {
+    margin: 5px;
+    font-size: 12px;
+}
+
+/** Switch
+   -------------------------------------*/
+.switch input {
+    position: absolute;
+    opacity: 0;
+}
+
+/**
+   * 1. Adjust this to size
+   */
+/* aqui para la longitud */
+.switch {
+    display: inline-block;
+    font-size: 25px;/* 1 */
+    height: 1em;
+    width: 8em;
+    background: #1E1E1E;
+    border-radius: 1em;
+}
+
+/* aqui para la bolita */
+.switch div {
+    height: 1em;
+    width: 4em;
+    border-radius: 1em;
+    border: 0.01em solid #000;
+    background: #FFF;
+    -webkit-transition: all 100ms;
+    -moz-transition: all 100ms;
+    transition: all 100ms;
+    -webkit-animation: glowToggle 800ms ease-out infinite alternate;
+    animation: glowToggle 800ms ease-out infinite alternate;
+    background: #222922;
+    background: linear-gradient(#333933, #222922);
+    border-color: 1px solid rgb(51, 66, 153);
+    box-shadow: 0 0 5px rgba(0, 13, 255, 0.2), inset 0 0 5px rgba(0, 26, 255, 0.1), 0 2px 0 #000;
+    color: #efe;
+    outline: none;
+}
+
+.switch div:hover {
+    background: #222922;
+    border-color: rgb(51, 66, 153);
+    box-shadow: 0 0 5px rgba(0, 13, 255, 0.2), inset 0 0 5px rgba(0, 26, 255, 0.1), 0 2px 0 #000;
+    outline: none;
+}
+
+.toggle-label-common {
+    position: absolute;
+    margin-right: 105px;
+    pointer-events: none;
+}
+
+.toggle-label-latin {
+    position: absolute;
+    margin-left: 110px;
+    pointer-events: none;
+}
+
+
+.switch input:checked+div {
+    -webkit-transform: translate3d(100%, 0, 0);
+    -moz-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+
+.glow {
+    color: lightskyblue;
+    animation: glowLabel 1s ease-in-out infinite alternate;
+}
+
+
+@-webkit-keyframes glowToggle {
+    0% {
+        border-color: rgb(51, 105, 153);
+        border-radius: 1em;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.2), inset 0 0 5px rgba(0, 213, 255, 0.1), 0 2px 0 #000;
+    }
+
+    100% {
+        border-color: rgb(102, 255, 252);
+        border-radius: 1em;
+        box-shadow: 0 0 20px rgba(0, 110, 255, 0.6), inset 0 0 10px rgba(0, 38, 255, 0.4), 0 2px 0 #000;
+    }
+}
+
+@keyframes glowToggle {
+    0% {
+        border-color: rgb(51, 114, 153);
+        border-radius: 1em;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.2), inset 0 0 5px rgba(0, 247, 255, 0.1), 0 2px 0 #000;
+    }
+
+    100% {
+        border-color: rgb(102, 242, 255);
+        border-radius: 1em;
+        box-shadow: 0 0 20px rgba(0, 132, 255, 0.6), inset 0 0 10px rgba(0, 170, 255, 0.4), 0 2px 0 #000;
+    }
+}
+/*  */
+@-webkit-keyframes glowLabel {
+    from {
+        text-shadow:
+            0 0 5px #00ddff, 0 0 10px #00ddff, 0 0 20px #00dcff, 0 0 40px #00dcff;
+    }
+
+    to {
+        text-shadow:
+            0 0 5px #00ddff, 0 0 10px #00ddff, 0 0 20px #00ddff, 0 0 40px #00ddff;
+    }
+}
+
+
+@keyframes glowLabel {
+    from {
+        text-shadow:
+            0 0 5px #00dcff, 0 0 10px #00dcff, 0 0 20px #00dcff, 0 0 40px #00dcff;
+    }
+
+    to {
+        text-shadow:
+            0 0 5px #09889c, 0 0 10px #09889c, 0 0 20px #09889c, 0 0 40px #09889c;
+    }
+}

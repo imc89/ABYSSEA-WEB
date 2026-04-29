@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    cursor: url('../../img/cursor/cursor.cur'), auto !important;
+    height: auto;
+    /* EVITAR COPIAR O ARRASTRAR IMAGENES */
+    /* -webkit-user-select: none;
+        -webkit-touch-callout: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; 
+        -webkit-user-drag: none;
+        -khtml-user-drag: none;
+        -moz-user-drag: none;
+        -o-user-drag: none;*/
+}
+
+.change-cursor:hover {
+    cursor: url('../../img/cursor/cursor_hover.cur'), auto !important;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.leftcorner {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.infoBox {
+    width: 900px;
+    margin: auto;
+    background-color: black;
+    padding: 25px;
+
+    border: 0.01em solid hwb(0 0% 100%);
+    color: #999999;
+    -webkit-transition: all 100ms;
+    -moz-transition: all 100ms;
+    transition: all 100ms;
+    -webkit-animation: info-glow 800ms ease-out infinite alternate;
+    animation: info-glow 800ms ease-out infinite alternate;
+    border-color: 1px solid rgb(51, 66, 153);
+    box-shadow: 0 0 5px rgba(0, 13, 255, 0.2), inset 0 0 5px rgba(0, 26, 255, 0.1), 0 2px 0 #000;
+    outline: none;
+}
+
+.light-title {
+    margin-top: 5px;
+    background: #111;
+    background: linear-gradient(#1b1b1b, #111);
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 1px #272727;
+    display: inline-block;
+    padding: 5px;
+    z-index: 1;
+}
+
+.glow-title {
+    text-align: center;
+    font-family: 'Cabin', helvetica, arial, sans-serif;
+    font-size: 13px;
+    height: 40px;
+    margin-top: 5px;
+    margin: auto;
+    padding: 10px;
+    width: 200px;
+    background: linear-gradient(#333, #222);
+    border: 1px solid #444;
+    color: #999999;
+    -webkit-transition: all 100ms;
+    -moz-transition: all 100ms;
+    transition: all 100ms;
+    -webkit-animation: info-glow 800ms ease-out infinite alternate;
+    animation: info-glow 800ms ease-out infinite alternate;
+    outline: none;
+}
+
+.container-arrow-buttons {
+    padding: 10px;
+    background: #222922;
+    background: linear-gradient(#333933, #222922);
+    border-radius: 50px;
+    width: 212;
+    border: 1px solid #444;
+    -webkit-transition: all 100ms;
+    -moz-transition: all 100ms;
+    transition: all 100ms;
+    -webkit-animation: glow 800ms ease-out infinite alternate;
+    animation: glow 800ms ease-out infinite alternate;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.arrow-button-right {
+    border: 1px solid #444;
+    float: right;
+    background: #222922;
+    background: linear-gradient(#999999, #222922);
+}
+
+.arrow-button-left {
+    border: 1px solid #444;
+    background: #222922;
+    background: linear-gradient(#999999, #222922);
+}
+
+.arrow-button-left:hover {
+    border: 1px solid #444;
+    -webkit-transition: all 100ms;
+    -moz-transition: all 100ms;
+    transition: all 100ms;
+    -webkit-animation: glow 800ms ease-out infinite alternate;
+    animation: glow 800ms ease-out infinite alternate;
+}
+
+.arrow-button-right:hover {
+    border: 1px solid #444;
+    -webkit-transition: all 100ms;
+    -moz-transition: all 100ms;
+    transition: all 100ms;
+    -webkit-animation: glow 800ms ease-out infinite alternate;
+    animation: glow 800ms ease-out infinite alternate;
+}
+
+.arrow-button-right:hover .arrow {
+    border-color: rgb(85, 235, 255);
+}
+
+.arrow-button-left:hover .arrow {
+    border-color: rgb(85, 235, 255);
+    ;
+}
+
+.container-arrow-buttons button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+    -webkit-animation: none;
+    animation: none;
+}
+
+.container-arrow-buttons button:disabled p,
+.container-arrow-buttons button:disabled i,
+.container-arrow-buttons button:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+    pointer-events: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+    -webkit-animation: none;
+    animation: none;
+}
+
+.container-arrow-buttons button:disabled .arrow-button-left .arrow {
+    border-color: black;
+}
+
+/* button:disabled .container-arrow-buttons button.disabled p,
+  .container-arrow-buttons button.disabled i{
+    opacity: 0.5;
+    cursor: not-allowed;
+  } */
+
+.arrow-size {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+.down-arrow {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.up-arrow {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+@-webkit-keyframes info-glow {
+    0% {
+        border-color: rgb(51, 105, 153);
+        border-radius: 1em;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.2), inset 0 0 5px rgba(0, 213, 255, 0.1), 0 2px 0 #000;
+    }
+
+    100% {
+        border-color: rgb(102, 255, 252);
+        border-radius: 1em;
+        box-shadow: 0 0 20px rgba(0, 110, 255, 0.6), inset 0 0 10px rgba(0, 38, 255, 0.4), 0 2px 0 #000;
+    }
+}
+
+@keyframes info-glow {
+    0% {
+        border-color: rgb(51, 114, 153);
+        border-radius: 1em;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.2), inset 0 0 5px rgba(0, 247, 255, 0.1), 0 2px 0 #000;
+    }
+
+    100% {
+        border-color: rgb(102, 242, 255);
+        border-radius: 1em;
+        box-shadow: 0 0 20px rgba(0, 132, 255, 0.6), inset 0 0 10px rgba(0, 170, 255, 0.4), 0 2px 0 #000;
+    }
+}

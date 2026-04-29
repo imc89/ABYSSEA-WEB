@@ -1,0 +1,33 @@
+body {
+    background-image: url('../../img/backgrounds/background.png');
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;  
+}
+
+.column {
+    flex: 25%;
+    padding: 20px;
+}
+
+h2, p {
+    color: white
+}
+
+ul {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    left: 0;
+}
+
+li {
+    background: url('../../img/icons_and_labels/list.gif') 0 0 no-repeat;
+    background-size: 30px;
+    padding: 6px 30px;
+    list-style-type: none;
+}

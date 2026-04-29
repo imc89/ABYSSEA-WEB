@@ -1,0 +1,100 @@
+body {
+    background-image: url('../../img/backgrounds/background.png');
+    color: #fff;
+}
+
+.names-list {
+    margin-left: 15px;
+}
+
+.name-info {
+    border: 1px solid rgb(51, 105, 153);
+    border-radius: 1em;
+    background: linear-gradient(#333, #222);
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: -5px;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2), inset 0 0 5px rgba(0, 213, 255, 0.1), 0 2px 0 #000;
+    width: 53%;
+}
+
+.name-info:hover {
+    border: 1px solid rgb(102, 255, 252);
+    border-radius: 1em;
+    background: linear-gradient(#333, #222);
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: -5px;
+    box-shadow: 0 0 20px rgba(0, 110, 255, 0.6), inset 0 0 10px rgba(0, 38, 255, 0.4), 0 2px 0 #000;
+    cursor: url('https://raw.githubusercontent.com/imc89/ABYSSEA-WEB/refs/heads/main/img/cursor/mainCursor_2.png') 32 32, auto;
+    width: 53%;
+}
+
+/* MODAL */
+.modal-fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+  }
+/* MODAL FIN */
+
+.light-img {
+    background: #111;
+    background: linear-gradient(#1b1b1b, #111);
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 1px #272727;
+    display: inline-block;
+    padding: 5px;
+    z-index: 1;
+}
+
+.glow-img {
+    font-family: 'Cabin', helvetica, arial, sans-serif;
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: auto;
+    padding: 10px;
+    width: 525px;
+    background: linear-gradient(#333, #222);
+    border: 1px solid #444;
+    color: #999999;
+    -webkit-transition: all 100ms;
+    -moz-transition: all 100ms;
+    transition: all 100ms;
+    -webkit-animation: info-glow 800ms ease-out infinite alternate;
+    animation: info-glow 800ms ease-out infinite alternate;
+    outline: none;
+}
+
+.card-info-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card-info {
+    margin: 0 25px;
+    display: flex;
+}
+
+.card {
+    display: flex;
+    border-radius: 10px;
+    background: linear-gradient(#1b1b1b, #111);
+    padding: 10px;
+}
+
+.subcard {
+    margin: 15px;
+    display: flex;
+    justify-content: space-between
+}
+
+.gallery-control {
+    margin-left: 10px;
+}

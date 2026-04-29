@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"/>
+
+<meta name="apple-mobile-web-app-title" content="ABYSSE">
+<meta name="application-name" content="ABYSSE">
+
+<link rel="icon" type="image/x-icon" href="./img/icons_and_labels/favicons/icon.svg">
+
+<link rel="apple-touch-icon-precomposed" sizes="80x80" href="./img/icons_and_labels/favicons/ios/ios-80.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="./img/icons_and_labels/favicons/ios/ios-120.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="167x167" href="./img/icons_and_labels/favicons/ios/ios-167.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="./img/icons_and_labels/favicons/ios/ios-180.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="256x256" href="./img/icons_and_labels/favicons/ios/ios-256.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="512x512" href="./img/icons_and_labels/favicons/ios/ios-512.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="1024x1024" href="./img/icons_and_labels/favicons/ios/ios-1024.png"/>
+
+<link rel="icon" type="image/png" sizes="36x36" href="./img/icons_and_labels/favicons/android/android_36.png"/>
+<link rel="icon" type="image/png" sizes="48x48" href="./img/icons_and_labels/favicons/android/android_48.png"/>
+<link rel="icon" type="image/png" sizes="72x72" href="./img/icons_and_labels/favicons/android/android_72.png"/>
+<link rel="icon" type="image/png" sizes="96x96" href="./img/icons_and_labels/favicons/android/android_96.png"/>
+<link rel="icon" type="image/png" sizes="144x144" href="./img/icons_and_labels/favicons/android/android_144.png"/>
+<link rel="icon" type="image/png" sizes="192x192" href="./img/icons_and_labels/favicons/android/android_192.png"/>
+
+
+<link rel="stylesheet" href="./src/styles/index.css">
+<link rel="stylesheet" href="./src/styles/menu-styles.css">
+<link rel="stylesheet" href="./src/styles/mainstyles.css">
+<link rel="stylesheet" href="./src/styles/translator-styles.css">
+<link rel="stylesheet" href="./src/styles/toggle-style.css">
+<link rel="stylesheet" href="./src/styles/searcher-style.css">
+<link rel="stylesheet" href="./src/styles/autocomplete-styles.css">
+
+<link rel="stylesheet" href="./src/query-styles/mobile-landscape-styles.css">
+<link rel="stylesheet" href="./src/query-styles/mobile-portrait-styles.css">
+
+<link rel="stylesheet" href="./src/query-styles/tablet-landscape-styles.css">
+<link rel="stylesheet" href="./src/query-styles/tablet-portrait-styles.css">
+
+<script src="./src/scripts/menu.js"></script>
+<script src="./src/scripts/imgSwitch.js"></script>
+<script src="./src/scripts/searcher.js"></script>
+<script src="./src/scripts/toggleSwitch.js"></script>
+<script src="./src/scripts/autocomplete.js"></script>
+<script src="./src/scripts/translators.js"></script>
+
+
+
+
+
+<title>ABYSSE</title>
+
+</head>
+
+<body style="font-family:Verdana; color:#aaaaaa; margin:0px">
+
+    <div class="link-wrap-left">
+        <div class="logo">
+            <img id="logo-img" src="./img/icons_and_labels/video.gif">
+        </div>
+    </div>
+
+    <div class="tools-container">
+        <div>
+            <section class="webdesigntuts-workshop tool tool-center">
+                <div class="form container">
+                    <input style="--color: white;" id="data" type="search" autocomplete="off"
+                        placeholder="¿Qué especie deseas buscar?">
+                    <button onclick="search()" data-i18n-key="main-search-button" class="change-cursor">BUSCAR</button>
+                    <ul id="autocomplete-data" class="hidden" role='listbox' aria-label='Search for a species'>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="toggle tool-center">
+                <div class="toggle-labels">
+                    <p class="toggle-label toggle-label-common glow" onclick="toggleSwitch()"
+                        data-i18n-key="main-search-common">COMÚN</p>
+                    <label class="switch change-cursor">
+                        <input id="toggle" class="change-cursor" type="checkbox" onclick="toggleSwitch()" />
+                        <div class="change-cursor"></div>
+                    </label>
+                    <p class="toggle-label toggle-label-latin" onclick="toggleSwitch()"
+                        data-i18n-key="main-search-latin">LATIN</p>
+                </div>
+            </div>
+        </div>
+        <div class="translator-container tool-center">
+            <select data-i18n-switcher="" class="translator change-cursor" style="text-align-last:center; ">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="left-column">
+            <div class="link-wrap-left">
+                <nav class="menu" tabindex="0">
+                    <div class="menu">
+                        <ul style="width: 225px;" class="mobileMenu">
+                            <li class="sliderPadding" onclick="window.location.href='./src/info/info.html'">
+                                <p data-i18n-key="index-menu-button-1" class="menu-button-title">Información</p>                            
+                                <img class="change-cursor menu-button-img" src="./img/menu/tabi1.png" name="menu_option_1" 
+                                onmouseover="insideImg(this);" onmouseout="outsideImg(this);"/>
+                            </li>
+                            <li class="sliderp sliderPadding" onclick="subMenu()">
+                                <p data-i18n-key="index-menu-button-2" class="menu-button-title">Zonas</p>
+                                <img class="change-cursor menu-button-img" src="./img/menu/tabi1.png" name="menu_option_1" 
+                                onmouseover="insideImg(this);" onmouseout="outsideImg(this);"/>
+                                
+                                <ul class="slider" id="slider">
+                                    <li class="menu-item" onclick="window.location.href='./src/galleries/gallery_1/gallery.html'">MESOPELÁGICA</li>
+                                    <li class="menu-item" >BATIPELÁGICA ALTA</li>
+                                    <li class="menu-item" >BATIPELÁGICA BAJA</li>
+                                    <li class="menu-item" >ABISAL</li>
+                                    <li class="menu-item" >HADAL</li>
+                                </ul>
+                            </li>
+                            <li class="sliderPadding">
+                                <p data-i18n-key="index-menu-button-3" class="menu-button-title">Índice</p>
+                                <img class="change-cursor menu-button-img" src="./img/menu/tabi1.png" name="menu_option_1" 
+                                onmouseover="insideImg(this);" onmouseout="outsideImg(this);"/>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+        <div class="right-column">
+            <div class="link-wrap-right">
+                <div id="main">
+                    <p data-i18n-key="main-text.1" class="text" style="margin-top: 225px;"> Ocupa el 70,8% de la
+                        superficie de la Tierra.</p>
+                    <p data-i18n-key="main-text.2">Con una profundidad media de 3.795 m.</p>
+                    <p data-i18n-key="main-text.3">El océano, la mayor biosfera de la Tierra,</p>
+                    <p data-i18n-key="main-text.4">es un vasto y cruel mundo de oscuridad,</p>
+                    <p data-i18n-key="main-text.5">alta presión y bajas temperaturas donde</p>
+                    <p data-i18n-key="main-text.6">hay criaturas que viven y prosperan</p>
+                    <p data-i18n-key="main-text.7">en este inmenso e inhóspito mundo.</p>
+                    <p data-i18n-key="main-text.8">Conozcamos a los habitantes de las profundidades,</p>
+                    <p data-i18n-key="main-text.9"> un espacio poco conocido que sigue</p>
+                    <p data-i18n-key="main-text.10"> resistiéndose a la intrusión humana...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

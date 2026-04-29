@@ -1,0 +1,13 @@
+{
+  "name": "abysse",
+  "version": "1.0.0",
+  "description": "Redesign and translation into spanish of the Japanese website created in 2004 (http://www7a.biglobe.ne.jp)",
+  "main": "index.js",
+  "scripts": {
+    "predeploy": "echo 'No build step needed for static site'",
+    "deploy": "gh-pages -d ."
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}

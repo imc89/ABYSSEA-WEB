@@ -1,0 +1,112 @@
+/* iPhone Portrait */
+@media screen and (max-width: 812px) and (orientation:landscape) {
+
+    /* For mobile phones: */
+    html,
+    body {
+        background: black;
+        /* background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(2, 0, 36, 1) 60%, rgba(69, 117, 133, 1) 83%, rgba(178, 220, 228, 1) 100%); */
+        overflow-y: none;
+        overflow-x: auto;
+    }
+
+    .logo {
+        background: transparent;
+        width: 10%;
+        position: sticky;
+        left: 0;
+    }
+
+    .tools-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tool-center ul {
+        /* position: relative;
+        left: 50%;
+        transform: translateX(-50%); */
+    }
+
+    .right-column {
+        display: none;
+    }
+
+    .left-column {
+        background: transparent;
+    }
+
+    nav ul {
+        margin: -10px;
+    }
+
+    .flex-container {
+        margin-left: -5px
+    }
+
+    #slider {
+        visibility: hidden;
+    }
+
+    .menu {
+        background: transparent;
+    }
+
+    .menu ul {
+        display: flex;
+        height: 60px;
+    }
+
+    .menu ul li+li {
+        border: 1px solid rgb(51, 66, 153);
+        background-image: linear-gradient(rgb(51, 57, 51), rgb(34, 41, 34));
+        text-align: center;
+        margin: -1px;
+        width: 175px;
+        height: 60px;
+    }
+
+    .menu img {
+        display: none;
+    }
+
+    .slider.closed {
+        margin-left: -70px;
+        margin-top: -163px;
+        position: relative;
+        height: 55px;
+    }
+
+    .sliderPadding {
+        padding: 0px 42px;
+    }
+
+    .menu img {
+        display: none;
+    }
+
+    .menu-button-title {
+        position: inherit;
+        margin-top: 5px;
+    }
+
+    .translator-container {
+        margin-top: 0px;
+        width: 302px;
+    }
+
+    .translator {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* MENU RESPONSIVE STYLE */
+    .desktopMenu {
+        display: none;
+    }
+
+    .mobileMenu {
+        display: block;
+    }
+}
