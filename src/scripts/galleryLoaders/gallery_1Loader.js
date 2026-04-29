@@ -38,7 +38,7 @@ function table() {
       imageElement.classList.add = "glow"
       // Agregamos los enlaces de redirección cuando pulsemos cada imagen.
       // We add the redirect links when we click each image.
-      let imageURL = `./fishes/fishes_${i}.html`;
+      let imageURL = `./fishes/fishes.html?id=${i}`;
       // Agregamos una imagen por defecto en caso de no poder cargar alguna de ellas.
       // We add a default image in case we cannot load any of them.
       imageElement.onerror = () => {

@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
+       
     <meta name="apple-mobile-web-app-title" content="ABYSSE">
     <meta name="application-name" content="ABYSSE">
 
@@ -26,8 +25,6 @@
     <link rel="icon" type="image/png" sizes="144x144" href="../../../../img/icons_and_labels/favicons/android/android_144.png"/>
     <link rel="icon" type="image/png" sizes="192x192" href="../../../../img/icons_and_labels/favicons/android/android_192.png"/>
 
-
-
     <link rel="stylesheet" href="../../fishes-styles.css">
     <link rel="stylesheet" href="../../../styles/mainstyles.css">
     <link rel="stylesheet" href="../../../styles/button-style.css">
@@ -36,45 +33,37 @@
 
     <script src="../../../scripts/cardsCounter.js"></script>
     <script src="../../../scripts/nextPageGallery.js"></script>
+    <script src="../../../scripts/infoModal.js"></script>
+    <script src="../../../data/pages.js"></script>
+    <script src="../../../scripts/fishesLoader.js"></script>
 
-    <title>ABYSSE_GALLERY_1_33</title>
+    <title id="page-title">ABYSSE_GALLERY</title>
 
 </head>
 
-<body style="background: black;">
+<body style="background: black;" onload="loadFishesPage()">
     <!--  -->
     <div class="card-info-container">
         <div class="card-info">
             <div style="align-self: center;">
-                <h1 style="color: white; width: 300px; text-align: center;margin-left: 15px;">Peces bentónicos de la
-                    zona de transición 33</h1>
+            <h1 id="page-h1" style="color: white; width: 300px; text-align: center;margin-left: 15px;"></h1>
             </div>
             <div>
-                <p style="color: white; text-align: center;">
-                    ((RELLENAR CON INFORMACIÓN))
-                </p>
+                <p id="page-desc" style="color: white; text-align: center;"></p>
             </div>
         </div>
         <div class="light-img card">
-            <img class="glow-img card-img" src="../../../../img/galleries/gallery_1/fishes_33.jpg" width="525">
+            <img id="main-img" class="glow-img card-img" src="" width="525">
             <div style="margin-top: 10px;">
-                <div class="names-list">
-                    1. -<br>
-                    <i>　ニセシロチョウマン</i><br>
-                    <i>　Glyptophidium oceanium</i><br>
-                    　15-22cm<br>
-                    <br>
-                    2. Brosmio japones<br>
-                    <i>　シロチョウマン</i><br>
-                    <i>　Glyptophidium japonicum</i><br>
-                    　22-75cm<br>
-                    <br>
-                    3. Brosmio esculpido<br>
-                    <i>　スカシチョウマン</i><br>
-                    <i>　Glyptophidium lucidum</i><br>
-                    　15-21cm
+                <div class="names-list" id="names-list">
+                    <!-- Fish list injected dynamically -->
                 </div>
                 <div class="subcard">
+                    <div id="sub-img-container" style="display: none;">
+                        <img id="sub-img" class="card-img" src="" width="250">
+                        <p id="sub-img-text" style="font-size: 13px;text-align: center;"></p>
+                    </div>
+
                     <div class="card-control">
                         <div class="light-button">
                             <button class="glow-button change-cursor"
@@ -89,22 +78,24 @@
                         </div>
                         <br>
                         <div class="container-arrow-buttons">
-                            <button class="arrow arrow-size arrow-button-left change-cursor"
-                            onclick="window.location.href='./fishes_32.html'">
-                              <p class="change-cursor"><i class="arrow up-arrow change-cursor"></i></p>
+                            <button id="prev-btn" class="arrow arrow-size arrow-button-left change-cursor" disabled>
+                                <p class="change-cursor"><i class="arrow up-arrow change-cursor"></i></p>
                             </button>
-                            <button class="arrow arrow-size arrow-button-right change-cursor"
-                              onclick="window.location.href='./fishes_34.html'">
-                              <p class="change-cursor"> <i class="arrow down-arrow change-cursor"></i></p>
+                            <button id="next-btn" class="arrow arrow-size arrow-button-right change-cursor" disabled>
+                                <p class="change-cursor"> <i class="arrow down-arrow change-cursor"></i></p>
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-
+        </div>
+    </div>
+<!-- MODAL -->
+        <div id="modal-container" class="modal-fullscreen" style="display: none;">
+            <div id="modal-content">
+            </div>
         </div>
 
-    </div>
 </body>
 
 </html>
