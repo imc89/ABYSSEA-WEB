@@ -47,6 +47,15 @@ async function loadFishesPage() {
     } else {
         nextBtn.disabled = true;
     }
+
+    // Keyboard navigation
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowUp' && !prevBtn.disabled) {
+            prevBtn.click();
+        } else if (e.key === 'ArrowDown' && !nextBtn.disabled) {
+            nextBtn.click();
+        }
+    });
     
     // Fetch fishes data from github to avoid local CORS issues
     const dataRes = await fetch('https://raw.githubusercontent.com/imc89/ABYSSEA-WEB/refs/heads/main/src/data/data.json');

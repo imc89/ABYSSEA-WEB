@@ -15,7 +15,7 @@ body {
     margin-bottom: 15px;
     margin-top: -5px;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.2), inset 0 0 5px rgba(0, 213, 255, 0.1), 0 2px 0 #000;
-    width: 53%;
+    width: 212px;
 }
 
 .name-info:hover {
@@ -27,7 +27,7 @@ body {
     margin-top: -5px;
     box-shadow: 0 0 20px rgba(0, 110, 255, 0.6), inset 0 0 10px rgba(0, 38, 255, 0.4), 0 2px 0 #000;
     cursor: url('../../img/cursor/cursor_hover.cur'), auto !important;
-    width: 53%;
+    width: 212px;
 }
 
 /* MODAL */
