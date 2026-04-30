@@ -30,7 +30,7 @@ ul li.selected {
 
 ul li:hover {
   color: lightslategrey;
-  cursor: url('https://raw.githubusercontent.com/imc89/ABYSSEA-WEB/refs/heads/main/img/cursor/mainCursor_2.png') 32 32, auto;
+  cursor: url('../../img/cursor/cursor_hover.cur'), auto !important;
 }
 
 ul li+li {

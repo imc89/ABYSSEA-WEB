@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    cursor: url('https://i.im.ge/2023/07/29/95u5nx.C5.png') 32 32, auto;
+    cursor: url('../../img/cursor/cursor.cur'), auto !important;
     /* -webkit-user-select: none;
         -webkit-touch-callout: none;
         -moz-user-select: none;
@@ -61,11 +61,11 @@ a {
 }
 
 a:hover {
-    cursor: url('https://i.im.ge/2023/07/29/95F7aX.C5.png') 32 32, auto;
+    cursor: url('../../img/cursor/cursor_hover.cur'), auto !important;
 }
 
 #home:hover {
-    cursor: url('https://i.im.ge/2023/07/29/95F7aX.C5.png') 32 32, auto;
+    cursor: url('../../img/cursor/cursor_hover.cur'), auto !important;
 }
 
 .glow-img-container .glow-img {
@@ -78,7 +78,7 @@ a:hover {
     -webkit-animation: glow 800ms ease-out infinite alternate;
     animation: glow 800ms ease-out infinite alternate;
     outline: none;
-  }
+}
 
 @media only screen and (max-width: 620px) {
 
@@ -93,7 +93,7 @@ a:hover {
         margin: 0 auto;
         transform: translateX(-50%);
     }
-    
-   
 
-} 
+
+
+}
