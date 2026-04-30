@@ -80,6 +80,10 @@ a:hover {
     outline: none;
 }
 
+.cursor-hover {
+    cursor: url('../../img/cursor/cursor_hover.cur'), auto !important;
+}
+
 @media only screen and (max-width: 620px) {
 
     /* For mobile phones: */
