@@ -3,7 +3,7 @@
     top:5px;
     right:0; */
     height: 62px;
-    -top: 5px;
+    margin: 5px;
     background: #111;
     background: linear-gradient(#1b1b1b, #111);
     border: 1px solid #000;
@@ -55,7 +55,7 @@
     background: linear-gradient(#333933, #222922);
     border-color: rgb(51, 66, 153);
     box-shadow: 0 0 5px rgba(0, 13, 255, 0.2), inset 0 0 5px rgba(0, 26, 255, 0.1), 0 2px 0 #000;
-	color: rgb(85, 235, 255);
+    color: rgb(85, 235, 255);
     outline: none;
 }
 
